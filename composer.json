@@ -1,0 +1,21 @@
+{
+    "name": "grilar/revision",
+    "description": "Revision package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Revision\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Revision\\Providers\\RevisionServiceProvider"
+            ]
+        }
+    }
+}
